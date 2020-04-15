@@ -1,0 +1,56 @@
+GET http://localhost:3000/products
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json 
+
+{
+    "name" : "Iphone 11 Max",
+    "price" : 599  
+}
+
+###
+
+GET http://localhost:3000/products/5e955a4aadd0ae1170a3b18d
+
+###
+
+PATCH http://localhost:3000/products/5e955a4aadd0ae1170a3b18d
+Content-Type: application/json 
+
+{
+	"price": 300
+}
+
+###
+
+DELETE http://localhost:3000/products/5e955a4aadd0ae1170a3b18d
+
+###
+
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/test?name=iMac&price=499
+
+###
+GET http://localhost:3000/test/234509898
+
+###
+GET http://localhost:3000/test
+Content-Type: application/json
+
+{
+    "name" : "iMacPro",
+    "price" : 499
+}
+
+###
+GET http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=iMac&price=499
+
+###
+GET http://localhost:3000/p
